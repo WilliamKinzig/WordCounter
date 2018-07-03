@@ -17,9 +17,9 @@ namespace WordCounter.Tests
     //This is the test.
     //naming convention is basically
     //MethodToBeTested_BehaviorToBeTested_ExpectedResultOfTest
-    public void IsLeapYear_NumberDivisibleByFour_True()
+    public void IsStringTest_IsStringAString_True()
     {
-      // eventually your testing code will go here
+          // eventually your testing code will go here
     }
   }
 }
