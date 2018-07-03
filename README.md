@@ -22,6 +22,11 @@ For test use multiple methods:
 -another for actually searching the string of words.
 
 /****************************** SPECS ****************************************/
+
+Split a string into individual words / "is the" / "is" "the"
+
+
+
 // quick sentence here on why this test is being done
           Behavior		                 Input  Output
 Split and read each index of an array / 1,4,5 / 1
