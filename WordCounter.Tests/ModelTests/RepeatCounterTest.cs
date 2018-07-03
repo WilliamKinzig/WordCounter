@@ -24,6 +24,20 @@ namespace WordCounter.Tests
           Assert.AreEqual(false, testLeapYear.IsStringTest(1999));
         }
 
+        [TestMethod]
+        public void IsLeapYear_MultiplesOfOneHundred_False()
+        {
+          RepeatCounter testLeapYear = new RepeatCounter();
+          Assert.AreEqual(false, testLeapYear.IsStringTest(1900));
+        }
+
+        [TestMethod]
+        public void IsLeapYear_MultiplesOfFourHundred_True()
+        {
+          RepeatCounter testLeapYear = new RepeatCounter();;
+          Assert.AreEqual(true, testLeapYear.IsStringTest(2000));
+        }
+
         // //This tells the compiler that the following code block is an individual
         // //test that should be run by MSTest
         // [TestMethod]
