@@ -17,7 +17,12 @@ namespace WordCounter.Tests
             Assert.AreEqual(true, testLeapYear.IsStringTest(2012));
         }
 
-
+        [TestMethod]
+        public void IsLeapYear_NumberNotDivisibleByFour_False()
+        {
+          RepeatCounter testLeapYear = new RepeatCounter();
+          Assert.AreEqual(false, testLeapYear.IsStringTest(1999));
+        }
 
         // //This tells the compiler that the following code block is an individual
         // //test that should be run by MSTest
