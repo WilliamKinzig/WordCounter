@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+
+    <!-- This sets up our testing environment so we can build test projects -->
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
+
+    <!-- This runs out tests for us -->
+    <PackageReference Include="MSTest.TestAdapter" Version="1.2" />
+
+    <!-- This allows us to create test classes and methods
+    Also allow us to use other built-in-code to construct our tests. -->
+    <PackageReference Include="MSTest.TestFramework" Version="1.2" />
+
+  </ItemGroup>
+
+
+    <!-- Within this , our test project references our main application
+    project.
+    Allows the tests to find and use the namespaces of the other project
+    without interfering with it -->
+  <ItemGroup>
+    <ProjectReference Include="..\WordCounter\WordCounter.csproj" />
+  </ItemGroup>
+
+</Project>
