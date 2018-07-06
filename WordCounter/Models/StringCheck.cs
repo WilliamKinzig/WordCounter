@@ -7,6 +7,7 @@ namespace WordCounter.Models
         private string _wordToCount;
         private string _paragraphToScan;
         private string[] _arrayFromParagraph;
+        private int _counter = 0;
 
         public WordSearcher (string searchFor, string searchIn)
         {
@@ -35,14 +36,7 @@ namespace WordCounter.Models
         public string[] StringToArray(string sentence)
         {
             string[] wordsArray = sentence.Split(' ');
-            //string arrayIndex = words[2];
-            _arrayFromParagraph = sentence.Split(' ');
-
-            //Check array is working properly
-            //string[] blah = sentence.Split(' ');
-            // string bl = string.Join(" ", blah);
-            // return bl;
-
+            this._arrayFromParagraph = sentence.Split(' ');
             return wordsArray;
         }
 
@@ -60,11 +54,9 @@ namespace WordCounter.Models
                     count += 0;
                 }
             }
+            this._counter = count;
             return count;
         }
-
-
-
     }
 
     public class Program
@@ -74,5 +66,4 @@ namespace WordCounter.Models
 
         }
     }
-
 }
