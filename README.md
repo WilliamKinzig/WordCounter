@@ -1,15 +1,15 @@
-/**************************** OBJECTIVE **************************************/
+# OBJECTIVE
 
 OBJECTIVE: - count instances of char that are in object.string
 Your mission is to create a program that checks how frequently a word appears in a given string.
 
-/************************** NAMING CONVENTIONS *******************************/
+## NAMING CONVENTIONS
 
 Solution Name: WordCounter.Solution
 Project Name: WordCounter
 Test Project Name: WordCounter.Tests
 
-## ASSIGNMENT INSTRUCTIONS ******************************/
+### ASSIGNMENT INSTRUCTIONS
 
 Create a class called RepeatCounter. This class should contain logic for counting
 how many times a word appears in a string of words
@@ -21,7 +21,7 @@ For test use multiple methods:
 -one method to test whether the user's input is valid
 -another for actually searching the string of words.
 
-/****************************** SPECS ****************************************/
+#### SPECS
 
 Split a string into individual words / "is the" / "is" "the"
 
