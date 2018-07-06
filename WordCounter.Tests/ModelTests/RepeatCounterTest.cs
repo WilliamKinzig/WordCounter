@@ -6,20 +6,20 @@ namespace WordCounter.Tests
     [TestClass]
     public class WordSearcherTest
     {
-        // [TestMethod]
-        // public void GetStringToCount_ReturnStringsWorkingWith_String()
-        // {
-        //     //Arrange
-        //     WordSearcher newWordSearcher = new WordSearcher("the","the yellow bus");
-        //
-        //     //Act
-        //     string toCount = newWordSearcher.GetWordToCount();
-        //     string toScan = newWordSearcher.GetParaGraph();
-        //
-        //     //Assert
-        //     //Assert.AreEqual(toCount, "the");
-        //     Assert.AreEqual(toScan, "the yellow bus");
-        // }
+        [TestMethod]
+        public void GetStringToCount_ReturnStringsWorkingWith_String()
+        {
+            //Arrange
+            WordSearcher newWordSearcher = new WordSearcher("the","the yellow bus");
+
+            //Act
+            string toCount = newWordSearcher.GetWordToCount();
+            string toScan = newWordSearcher.GetParaGraph();
+
+            //Assert
+            //Assert.AreEqual(toCount, "the");
+            Assert.AreEqual(toScan, "the yellow bus");
+        }
 
         [TestMethod]
         public void GetIndexFromArray_ReturnIndex_String()
@@ -29,10 +29,11 @@ namespace WordCounter.Tests
 
             //Act
             string paragraph = newWordSearcher.GetParaGraph();
-            string result = newWordSearcher.CountInstances(paragraph);
+            string result = newWordSearcher.StringToArray(paragraph);
+            string test = newWordSearcher.GetWordToCount();
 
             //Assert
-            Assert.AreEqual("cat", result);
+            Assert.AreEqual(test, result); //use (paragraph, result) to check array
         }
 
 
