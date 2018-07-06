@@ -1,4 +1,7 @@
 using System;
+using System.Threading;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace WordCounter.Models
 {
@@ -46,11 +49,11 @@ namespace WordCounter.Models
          * @param sting to split 'sentence'
          * @return wordsArray
          */
-        public string[] StringToArray()
+        public void StringToArray()
         {
             //string[] wordsArray = this._paragraphToScan.Split(' ');
             this._arrayFromParagraph = _paragraphToScan.Split(' ');
-            return this._arrayFromParagraph;
+            //return this._arrayFromParagraph;
         }
 
         /**
@@ -78,27 +81,39 @@ namespace WordCounter.Models
             return this._counter;
         }
     }
-}
 
-/************************************************************************************/
-/************************************************************************************/
-/**
- * Main method
- *
- * Searches for the number of times a word appears in a sentence or paragraph
- * @param
- * @return count
- */
- /************************************************************************************/
-// public class Program
-// {
-//     public static void Main()
-//     {
-//         int count = 0;
-//
-//         StringCheck stringCheckObject = new StringCheck("cat", "cat cat cat");
-//         stringCheckObject.StringToArray();
-//         stringCheckObject.ArrayLoopCounter();
-//
-//     }
-// }
+    /************************************************************************************/
+    /************************************************************************************/
+    /**
+     * Main method
+     *
+     * Searches for the number of times a word appears in a sentence or paragraph
+     * @param
+     * @return count
+     */
+     /************************************************************************************/
+    public class Program
+    {
+        public static void Main()
+        {
+            int count = 0;
+
+            StringCheck stringCheckObject = new StringCheck("cat", "cat cat cat");
+            stringCheckObject.StringToArray();
+            count = stringCheckObject.ArrayLoopCounter();
+            Console.WriteLine(count); //output: 3
+
+            StringCheck stringCheckObject2 = new StringCheck("cat", "cat dog cat");
+            stringCheckObject2.StringToArray();
+            count = stringCheckObject2.ArrayLoopCounter();
+            Console.WriteLine(count); //output: 2
+
+            StringCheck stringCheckObject3 = new StringCheck("cat", "cat dog cat");
+            stringCheckObject3.StringToArray();
+            stringCheckObject3.SetWordToCount("taste");
+            stringCheckObject3.SetParagraph("The cow is big, the cow taste great");
+            count = stringCheckObject3.ArrayLoopCounter();
+            Console.WriteLine(count); //output: 1
+        }
+    }
+}

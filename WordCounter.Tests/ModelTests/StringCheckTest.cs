@@ -1,8 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WordCounter.Models;
+using WordCounter;
+using System;
+using System.Collections.Generic;
 
-namespace WordCounter.Tests
-{
+
     [TestClass]
     public class StringCheckTest
     {
@@ -17,7 +18,6 @@ namespace WordCounter.Tests
             string toScan = newStringCheck.GetParaGraph();
 
             //Assert
-            //Assert.AreEqual(toCount, "the");
             Assert.AreEqual(toScan, "the yellow bus");
         }
 
@@ -30,11 +30,10 @@ namespace WordCounter.Tests
             //Act
             string paragraph = newStringCheck.GetParaGraph();
             string[] result = newStringCheck.StringToArray();
-            //string test = newStringCheck.GetWordToCount();
             string[] blah = paragraph.Split(' ');
 
             //Assert
-            CollectionAssert.AreEqual(blah, result); //use (paragraph, result) to check array
+            CollectionAssert.AreEqual(blah, result);
         }
 
         [TestMethod]
@@ -42,8 +41,6 @@ namespace WordCounter.Tests
         {
             //Arrange
             StringCheck newStringCheck = new StringCheck("cat", "cat and cat");
-            //string paragraph = newStringCheck.GetParaGraph();
-            //string word = newStringCheck.GetWordToCount();
             string[] test = newStringCheck.StringToArray();
 
             //Act

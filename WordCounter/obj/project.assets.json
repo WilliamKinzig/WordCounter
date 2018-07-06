@@ -7042,11 +7042,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\William Kinzig\\documents\\Epicodus\\WordCounter\\WordCounter\\WordCounter.csproj",
+      "projectUniqueName": "C:\\Users\\William Kinzig\\documents\\Epicodus\\WordCounter.Solution\\WordCounter\\WordCounter.csproj",
       "projectName": "WordCounter",
-      "projectPath": "C:\\Users\\William Kinzig\\documents\\Epicodus\\WordCounter\\WordCounter\\WordCounter.csproj",
+      "projectPath": "C:\\Users\\William Kinzig\\documents\\Epicodus\\WordCounter.Solution\\WordCounter\\WordCounter.csproj",
       "packagesPath": "C:\\Users\\William Kinzig\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\William Kinzig\\documents\\Epicodus\\WordCounter\\WordCounter\\obj\\",
+      "outputPath": "C:\\Users\\William Kinzig\\documents\\Epicodus\\WordCounter.Solution\\WordCounter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\William Kinzig\\AppData\\Roaming\\NuGet\\NuGet.Config"
