@@ -1,5 +1,6 @@
 ## Word Counter
 ### * author William Kinzig
+ * June 29th, 2018
 
  * This program checks how frequently a word appears in a given string.
 
