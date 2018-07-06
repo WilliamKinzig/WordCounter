@@ -3,14 +3,14 @@
 
  * This program checks how frequently a word appears in a given string.
 
-### OBJECTIVE
+#### OBJECTIVE
 
 OBJECTIVE: - count instances of char that are in object.string
 Your mission is to create a program that checks how frequently a word appears in a given string.
 
 #### Setup/Installation Requirements
 
-* _Use the browser icon in the folder_
+_Use the browser icon in the folder_
 
 #### Known Bugs
 
