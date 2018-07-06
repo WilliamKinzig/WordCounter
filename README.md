@@ -1,9 +1,7 @@
 ## Word Counter
+### * author William Kinzig
 
  * This program checks how frequently a word appears in a given string.
-
-
-### * author William Kinzig
 
 
 ### OBJECTIVE
