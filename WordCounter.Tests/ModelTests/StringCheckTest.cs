@@ -1,9 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WordCounter;
-using System;
-using System.Collections.Generic;
+using WordCounter.Models;
 
-
+namespace WordCounter.Tests
+{
     [TestClass]
     public class StringCheckTest
     {
@@ -18,6 +17,7 @@ using System.Collections.Generic;
             string toScan = newStringCheck.GetParaGraph();
 
             //Assert
+            //Assert.AreEqual(toCount, "the");
             Assert.AreEqual(toScan, "the yellow bus");
         }
 
@@ -29,11 +29,12 @@ using System.Collections.Generic;
 
             //Act
             string paragraph = newStringCheck.GetParaGraph();
-            string[] result = newStringCheck.StringToArray();
+            string[] result = newStringCheck.StringToArray(paragraph);
+            //string test = newStringCheck.GetWordToCount();
             string[] blah = paragraph.Split(' ');
 
             //Assert
-            CollectionAssert.AreEqual(blah, result);
+            CollectionAssert.AreEqual(blah, result); //use (paragraph, result) to check array
         }
 
         [TestMethod]
@@ -41,56 +42,15 @@ using System.Collections.Generic;
         {
             //Arrange
             StringCheck newStringCheck = new StringCheck("cat", "cat and cat");
-            string[] test = newStringCheck.StringToArray();
+            string paragraph = newStringCheck.GetParaGraph();
+            string word = newStringCheck.GetWordToCount();
+            string[] test = newStringCheck.StringToArray(paragraph);
 
             //Act
-            int result = newStringCheck.ArrayLoopCounter();
+            int result = newStringCheck.ArrayLoopCounter(word,test);
 
             //Assert
             Assert.AreEqual(result,2);
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-//     //Act
-//     string newParagraph = "Scooby Dooby Doo. Where are you?";
-//     newWordSearcher.SetParagraph(newParagraph);
-//     string result = newWordSearcher.GetParaGraph();
-//
-//     //Assert
-//     Assert.AreEqual(newParagraph, result);
-// }
