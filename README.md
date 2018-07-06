@@ -5,8 +5,8 @@
 
 #### OBJECTIVE
 
-OBJECTIVE: - count instances of char that are in object.string
-Your mission is to create a program that checks how frequently a word appears in a given string.
+_OBJECTIVE: - _count instances of char that are in object.string
+Your mission is to create a program that checks how frequently a word appears in a given string._
 
 #### Setup/Installation Requirements
 
@@ -26,27 +26,26 @@ _Created with Atom editor.  Use any browser to view._
 
 #### License
 
-*No license required*
+_*No license required*_
 
-Copyright (c) 2018 **_William Kinzig**
+_Copyright (c) 2018 **_William Kinzig**_
 
 #### NAMING CONVENTIONS
 
-Solution Name: WordCounter.Solution
-Project Name: WordCounter
-Test Project Name: WordCounter.Tests
+_Solution Name: WordCounter.Solution_
+_Project Name: WordCounter_
+_Test Project Name: WordCounter.Tests_
 
 #### ASSIGNMENT INSTRUCTIONS
 
-Create a class called RepeatCounter. This class should contain logic for counting
-how many times a word appears in a string of words
+_Create a class called RepeatCounter. This class should contain logic for counting how many times a word appears in a string of words_
 
-Do not use regular expressions in your logic.
-Use lists Array Char String methods
+_Do not use regular expressions in your logic._
+_Use lists Array Char String methods_
 
-For test use multiple methods:
--one method to test whether the user's input is valid
--another for actually searching the string of words.
+_For test use multiple methods:_
+_-one method to test whether the user's input is valid_
+_-another for actually searching the string of words._
 
 #### SPECS
 
