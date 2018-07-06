@@ -8490,11 +8490,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\William Kinzig\\desktop\\WordCounter\\WordCounter.Tests\\StringCheck.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\William Kinzig\\documents\\Epicodus\\WordCounter\\WordCounter.Tests\\StringCheck.Tests.csproj",
       "projectName": "StringCheck.Tests",
-      "projectPath": "C:\\Users\\William Kinzig\\desktop\\WordCounter\\WordCounter.Tests\\StringCheck.Tests.csproj",
+      "projectPath": "C:\\Users\\William Kinzig\\documents\\Epicodus\\WordCounter\\WordCounter.Tests\\StringCheck.Tests.csproj",
       "packagesPath": "C:\\Users\\William Kinzig\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\William Kinzig\\desktop\\WordCounter\\WordCounter.Tests\\obj\\",
+      "outputPath": "C:\\Users\\William Kinzig\\documents\\Epicodus\\WordCounter\\WordCounter.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\William Kinzig\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -8508,8 +8508,8 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Users\\William Kinzig\\desktop\\WordCounter\\WordCounter\\WordCounter.csproj": {
-              "projectPath": "C:\\Users\\William Kinzig\\desktop\\WordCounter\\WordCounter\\WordCounter.csproj"
+            "C:\\Users\\William Kinzig\\documents\\Epicodus\\WordCounter\\WordCounter\\WordCounter.csproj": {
+              "projectPath": "C:\\Users\\William Kinzig\\documents\\Epicodus\\WordCounter\\WordCounter\\WordCounter.csproj"
             }
           }
         }

@@ -50,8 +50,11 @@ _-one method to test whether the user's input is valid_
 _-another for actually searching the string of words._
 
 #### SPECS
+-get word to count
 
--put the given string into an array
+-get paragraph to check
+
+-put paragraph into an array
 
 -create loop to go through the array
 

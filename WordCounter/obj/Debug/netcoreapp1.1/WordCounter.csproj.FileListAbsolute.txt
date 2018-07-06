@@ -11,3 +11,10 @@ C:\Users\William Kinzig\desktop\WordCounter\WordCounter\obj\Debug\netcoreapp1.1\
 C:\Users\William Kinzig\desktop\WordCounter\WordCounter\obj\Debug\netcoreapp1.1\WordCounter.AssemblyInfo.cs
 C:\Users\William Kinzig\desktop\WordCounter\WordCounter\obj\Debug\netcoreapp1.1\WordCounter.dll
 C:\Users\William Kinzig\desktop\WordCounter\WordCounter\obj\Debug\netcoreapp1.1\WordCounter.pdb
+C:\Users\William Kinzig\documents\Epicodus\WordCounter\WordCounter\bin\Debug\netcoreapp1.1\WordCounter.deps.json
+C:\Users\William Kinzig\documents\Epicodus\WordCounter\WordCounter\obj\Debug\netcoreapp1.1\WordCounter.csproj.CoreCompileInputs.cache
+C:\Users\William Kinzig\documents\Epicodus\WordCounter\WordCounter\obj\Debug\netcoreapp1.1\WordCounter.AssemblyInfo.cs
+C:\Users\William Kinzig\documents\Epicodus\WordCounter\WordCounter\obj\Debug\netcoreapp1.1\WordCounter.dll
+C:\Users\William Kinzig\documents\Epicodus\WordCounter\WordCounter\obj\Debug\netcoreapp1.1\WordCounter.pdb
+C:\Users\William Kinzig\documents\Epicodus\WordCounter\WordCounter\bin\Debug\netcoreapp1.1\WordCounter.dll
+C:\Users\William Kinzig\documents\Epicodus\WordCounter\WordCounter\bin\Debug\netcoreapp1.1\WordCounter.pdb

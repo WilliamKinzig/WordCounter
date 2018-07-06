@@ -1,38 +1,27 @@
-namespace WordCounter
+namespace WordCounter.Models
 {
-    public class StringCheck
+  public class WordSearcher
+  {
+    private string _description;
+    public WordSearcher (string description)
     {
-        private string _wordToCount;
-
-        public string StringToArray(string wordIn)
-        {
-            return wordIn;
-        }
+       _description = description; //uncomment to get test to pass
+    }
+    public string GetDescription()
+    {
+      return _description;
+    }
+    public void SetDescription(string newWord)
+    {
+      _description = newWord;
+    }
+  }
+  public class Program
+  {
+    public static void Main()
+    {
 
     }
+  }
+
 }
-            // logic will go here
-            //return false;
-            //return year % 4 == 0;
-
-            //   if (year % 100 == 0)
-            //   {
-            //     return false;
-            //   }
-            //   else
-            //   {
-            //     return year % 4 == 0;
-            //   }
-
-            // if (year % 400 == 0)
-            // {
-            //     return true;
-            // }
-            // else if (year % 100 == 0)
-            // {
-            //     return false;
-            // }
-            // else
-            // {
-            //     return year % 4 == 0;
-            // }
