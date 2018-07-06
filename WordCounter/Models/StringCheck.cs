@@ -2,14 +2,14 @@ using System;
 
 namespace WordCounter.Models
 {
-    public class WordSearcher
+    public class StringCheck
     {
         private string _wordToCount;
         private string _paragraphToScan;
         private string[] _arrayFromParagraph;
         private int _counter = 0;
 
-        public WordSearcher (string searchFor, string searchIn)
+        public StringCheck (string searchFor, string searchIn)
         {
             _wordToCount = searchFor;
             _paragraphToScan = searchIn;
