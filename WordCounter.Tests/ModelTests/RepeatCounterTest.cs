@@ -29,13 +29,31 @@ namespace WordCounter.Tests
 
             //Act
             string paragraph = newWordSearcher.GetParaGraph();
-            string result = newWordSearcher.StringToArray(paragraph);
-            string test = newWordSearcher.GetWordToCount();
+            string[] result = newWordSearcher.StringToArray(paragraph);
+            //string test = newWordSearcher.GetWordToCount();
+            string[] blah = paragraph.Split(' ');
 
             //Assert
-            Assert.AreEqual(test, result); //use (paragraph, result) to check array
+            CollectionAssert.AreEqual(blah, result); //use (paragraph, result) to check array
         }
 
+        [TestMethod]
+        public void GetTheWordCount_ReturnTheWordCount_Int()
+        {
+            //Arrange
+            WordSearcher newWordSearcher = new WordSearcher("cat", "cat and cat");
+            string paragraph = newWordSearcher.GetParaGraph();
+            string word = newWordSearcher.GetWordToCount();
+            string[] test = newWordSearcher.StringToArray(paragraph);
+
+            //Act
+            int result = newWordSearcher.ArrayLoopCounter(word,test);
+
+            //Assert
+            Assert.AreEqual(result,2);
+        }
+
+        
 
 
     }

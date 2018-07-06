@@ -32,18 +32,35 @@ namespace WordCounter.Models
             return _paragraphToScan;
         }
 
-        public string StringToArray(string sentence)
+        public string[] StringToArray(string sentence)
         {
-            string[] words = sentence.Split(' ');
-            string arrayIndex = words[2];
+            string[] wordsArray = sentence.Split(' ');
+            //string arrayIndex = words[2];
             _arrayFromParagraph = sentence.Split(' ');
 
-            //To check array is working properly
-            // string[] blah = sentence.Split(' ');
+            //Check array is working properly
+            //string[] blah = sentence.Split(' ');
             // string bl = string.Join(" ", blah);
             // return bl;
-            
-            return arrayIndex;
+
+            return wordsArray;
+        }
+
+        public int ArrayLoopCounter(string word, string[] arrayIn)
+        {
+            int count = 0;
+            for(int i=0; i < arrayIn.Length; i++)
+            {
+                if(arrayIn[i] == word)
+                {
+                    count += 1;
+                }
+                else
+                {
+                    count += 0;
+                }
+            }
+            return count;
         }
 
 
