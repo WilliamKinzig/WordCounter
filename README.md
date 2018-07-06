@@ -1,16 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package TicTacToe;
+## Word Counter
 
-import java.util.Scanner;
+ * This program checks how frequently a word appears in a given string.
 
-/**
- *
- * @author William Kinzig
- */
+
+### * author William Kinzig
+
 
 ### OBJECTIVE
 
