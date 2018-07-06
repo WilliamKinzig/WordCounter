@@ -1,9 +1,23 @@
-# OBJECTIVE
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package TicTacToe;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author William Kinzig
+ */
+
+### OBJECTIVE
 
 OBJECTIVE: - count instances of char that are in object.string
 Your mission is to create a program that checks how frequently a word appears in a given string.
 
-## NAMING CONVENTIONS
+### NAMING CONVENTIONS
 
 Solution Name: WordCounter.Solution
 Project Name: WordCounter
@@ -21,7 +35,7 @@ For test use multiple methods:
 -one method to test whether the user's input is valid
 -another for actually searching the string of words.
 
-#### SPECS
+### SPECS
 
 Split a string into individual words / "is the" / "is" "the"
 
