@@ -9,7 +9,7 @@ Solution Name: WordCounter.Solution
 Project Name: WordCounter
 Test Project Name: WordCounter.Tests
 
-/********************** ASSIGNMENT INSTRUCTIONS ******************************/
+## ASSIGNMENT INSTRUCTIONS ******************************/
 
 Create a class called RepeatCounter. This class should contain logic for counting
 how many times a word appears in a string of words
