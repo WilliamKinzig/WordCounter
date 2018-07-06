@@ -50,21 +50,26 @@ _-one method to test whether the user's input is valid_
 _-another for actually searching the string of words._
 
 #### SPECS
+
 -get word to count
+Behavior		                 Input  Output
+private string getting set  /    "cat"/"cat"
+
 
 -get paragraph to check
+Behavior		                 Input        Output
+private string getting set  /    "cat is fat"/"cat is fat"
+
 
 -put paragraph into an array
+Behavior		                           Input          Output
+Split _string sentence into an array  / "cat is orange"/array[1] == "is"
 
--create loop to go through the array
 
--create an int counter
-
--increment counter by one every time for every occurrence of the word
-
--return final counter result to user
-
-// quick sentence here on why this test is being done
-
-          Behavior		                 Input  Output
-Split and read each index of an array / 1,4,5 / 1
+-count occurrences of given string in array
+    -create loop to go through the array
+    -create an int counter
+    -increment counter by one every time for every occurrence of the word
+    -return final counter result to user
+Behavior		                                   Input  Output
+String[] blah = new String[] {"cat", "is", "cat"}/ "cat" /  2
