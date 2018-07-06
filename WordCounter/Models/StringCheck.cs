@@ -9,7 +9,6 @@ namespace WordCounter.Models
         private string[] _arrayFromParagraph;
         private int _counter = 0;
 
-
         /**
          * Class constructor
          */
@@ -47,11 +46,11 @@ namespace WordCounter.Models
          * @param sting to split 'sentence'
          * @return wordsArray
          */
-        public string[] StringToArray(string sentence)
+        public string[] StringToArray()
         {
-            string[] wordsArray = sentence.Split(' ');
-            this._arrayFromParagraph = sentence.Split(' ');
-            return wordsArray;
+            //string[] wordsArray = this._paragraphToScan.Split(' ');
+            this._arrayFromParagraph = _paragraphToScan.Split(' ');
+            return this._arrayFromParagraph;
         }
 
         /**
@@ -61,12 +60,12 @@ namespace WordCounter.Models
          * @param array to scan 'arrayIn'
          * @return count
          */
-        public int ArrayLoopCounter(string word, string[] arrayIn)
+        public int ArrayLoopCounter()
         {
             int count = 0;
-            for(int i=0; i < arrayIn.Length; i++)
+            for(int i=0; i < this._arrayFromParagraph.Length; i++)
             {
-                if(arrayIn[i] == word)
+                if(this._arrayFromParagraph[i] == this._wordToCount)
                 {
                     count += 1;
                 }
@@ -76,7 +75,7 @@ namespace WordCounter.Models
                 }
             }
             this._counter = count;
-            return count;
+            return this._counter;
         }
     }
 }
@@ -91,42 +90,15 @@ namespace WordCounter.Models
  * @return count
  */
  /************************************************************************************/
-public class Program
-{
-    public static void Main()
-    {
-        int count = 0;
-
-        StringCheck stringsObject = new StringCheck("cat", "cat cat cat");
-        stringsObject.StringToArray
-        stringsObject.ArrayLoopCounter
-
-    }
-}
-
-
-
-// public string[] StringToArray(string sentence)
+// public class Program
 // {
-//     string[] wordsArray = sentence.Split(' ');
-//     this._arrayFromParagraph = sentence.Split(' ');
-//     return wordsArray;
-// }
-//
-// public int ArrayLoopCounter(string word, string[] arrayIn)
-// {
-//     int count = 0;
-//     for(int i=0; i < arrayIn.Length; i++)
+//     public static void Main()
 //     {
-//         if(arrayIn[i] == word)
-//         {
-//             count += 1;
-//         }
-//         else
-//         {
-//             count += 0;
-//         }
+//         int count = 0;
+//
+//         StringCheck stringCheckObject = new StringCheck("cat", "cat cat cat");
+//         stringCheckObject.StringToArray();
+//         stringCheckObject.ArrayLoopCounter();
+//
 //     }
-//     this._counter = count;
-//     return count;
 // }
