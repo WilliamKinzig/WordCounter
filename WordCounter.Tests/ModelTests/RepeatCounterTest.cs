@@ -6,20 +6,37 @@ namespace WordCounter.Tests
     [TestClass]
     public class WordSearcherTest
     {
+        // [TestMethod]
+        // public void GetStringToCount_ReturnStringsWorkingWith_String()
+        // {
+        //     //Arrange
+        //     WordSearcher newWordSearcher = new WordSearcher("the","the yellow bus");
+        //
+        //     //Act
+        //     string toCount = newWordSearcher.GetWordToCount();
+        //     string toScan = newWordSearcher.GetParaGraph();
+        //
+        //     //Assert
+        //     //Assert.AreEqual(toCount, "the");
+        //     Assert.AreEqual(toScan, "the yellow bus");
+        // }
+
         [TestMethod]
-        public void GetStringToCount_ReturnStringsWorkingWith_String()
+        public void GetIndexFromArray_ReturnIndex_String()
         {
             //Arrange
-            WordSearcher newWordSearcher = new WordSearcher("the","the yellow bus");
+            WordSearcher newWordSearcher = new WordSearcher("dog", "cat and dog");
 
             //Act
-            string toCount = newWordSearcher.GetWordToCount();
-            string toScan = newWordSearcher.GetParaGraph();
-            
+            string paragraph = newWordSearcher.GetParaGraph();
+            string result = newWordSearcher.CountInstances(paragraph);
+
             //Assert
-            //Assert.AreEqual(toCount, "the");
-            Assert.AreEqual(toScan, "the yellow bus");
+            Assert.AreEqual("cat", result);
         }
+
+
+
     }
 }
 

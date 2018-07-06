@@ -1,3 +1,5 @@
+using System;
+
 namespace WordCounter.Models
 {
     public class WordSearcher
@@ -9,6 +11,7 @@ namespace WordCounter.Models
         {
             _wordToCount = searchFor;
             _paragraphToScan = searchIn;
+
         }
 
         public string GetWordToCount()
@@ -29,7 +32,15 @@ namespace WordCounter.Models
             return _paragraphToScan;
         }
 
-
+        public string CountInstances(string sentence)
+        {
+            // var foos = "Foo1,Foo2,Foo3";
+            // var fooArray = foos.Split(',');  // now you have an array of 3 strings
+            // foos = String.Join(",", fooArray); // now you have the same as in the first line
+            string[] words = sentence.Split(' ');
+            string arrayIndex = words[0];
+            return arrayIndex;
+        }
 
 
 
