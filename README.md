@@ -1,7 +1,8 @@
-## Word Counter _________________________________________________ June 29th, 2018
+## Word Counter
 ### * author William Kinzig
+_June 29th, 2018_
 
- * This program checks how frequently a word appears in a given string.
+_ * This program checks how frequently a word appears in a given string._
 
 #### OBJECTIVE
 
@@ -10,7 +11,7 @@ Your mission is to create a program that checks how frequently a word appears in
 
 #### Setup/Installation Requirements
 
-_Use the browser icon in the folder_
+_None_
 
 #### Known Bugs
 
