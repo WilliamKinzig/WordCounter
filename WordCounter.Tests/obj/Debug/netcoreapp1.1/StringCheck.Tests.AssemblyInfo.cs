@@ -7,11 +7,11 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("WordCounter.Tests")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("StringCheck.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Package Description")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("WordCounter.Tests")]
-[assembly: System.Reflection.AssemblyTitleAttribute("WordCounter.Tests")]
+[assembly: System.Reflection.AssemblyProductAttribute("StringCheck.Tests")]
+[assembly: System.Reflection.AssemblyTitleAttribute("StringCheck.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

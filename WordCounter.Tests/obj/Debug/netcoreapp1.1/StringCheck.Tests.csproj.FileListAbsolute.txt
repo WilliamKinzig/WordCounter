@@ -1,0 +1,14 @@
+C:\Users\William Kinzig\desktop\WordCounter\WordCounter.Tests\bin\Debug\netcoreapp1.1\StringCheck.Tests.deps.json
+C:\Users\William Kinzig\desktop\WordCounter\WordCounter.Tests\obj\Debug\netcoreapp1.1\StringCheck.Tests.csproj.CoreCompileInputs.cache
+C:\Users\William Kinzig\desktop\WordCounter\WordCounter.Tests\obj\Debug\netcoreapp1.1\StringCheck.Tests.AssemblyInfo.cs
+C:\Users\William Kinzig\desktop\WordCounter\WordCounter.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\William Kinzig\desktop\WordCounter\WordCounter.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\William Kinzig\desktop\WordCounter\WordCounter.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\William Kinzig\desktop\WordCounter\WordCounter.Tests\bin\Debug\netcoreapp1.1\StringCheck.Tests.runtimeconfig.json
+C:\Users\William Kinzig\desktop\WordCounter\WordCounter.Tests\bin\Debug\netcoreapp1.1\StringCheck.Tests.runtimeconfig.dev.json
+C:\Users\William Kinzig\desktop\WordCounter\WordCounter.Tests\bin\Debug\netcoreapp1.1\StringCheck.Tests.dll
+C:\Users\William Kinzig\desktop\WordCounter\WordCounter.Tests\bin\Debug\netcoreapp1.1\StringCheck.Tests.pdb
+C:\Users\William Kinzig\desktop\WordCounter\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.dll
+C:\Users\William Kinzig\desktop\WordCounter\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.pdb
+C:\Users\William Kinzig\desktop\WordCounter\WordCounter.Tests\obj\Debug\netcoreapp1.1\StringCheck.Tests.dll
+C:\Users\William Kinzig\desktop\WordCounter\WordCounter.Tests\obj\Debug\netcoreapp1.1\StringCheck.Tests.pdb

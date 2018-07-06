@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v1.1": {
-      "wordcounter.tests/1.0.0": {
+      "stringcheck.tests/1.0.0": {
         "dependencies": {
           "MSTest.TestAdapter": "1.2.0",
           "MSTest.TestFramework": "1.2.0",
@@ -14,7 +14,7 @@
           "WordCounter": "1.0.0"
         },
         "runtime": {
-          "WordCounter.Tests.dll": {}
+          "StringCheck.Tests.dll": {}
         }
       },
       "microsoft.net.test.sdk/15.0.0": {
@@ -360,7 +360,7 @@
     }
   },
   "libraries": {
-    "wordcounter.tests/1.0.0": {
+    "stringcheck.tests/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

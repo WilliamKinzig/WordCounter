@@ -6,37 +6,36 @@ using WordCounter;
 
 namespace WordCounter.Tests
 {
-
     [TestClass] //This tells MSTest that the following class contains tests to be run
     public class IsStringTest
     {
         [TestMethod]
-        public void IsLeapYear_NumberDivisibleByFour_True()
+        public void IsUserWord_ActuallyAString_False()
         {
-            RepeatCounter testLeapYear = new RepeatCounter();
-            Assert.AreEqual(true, testLeapYear.IsStringTest(2012));
+            StringCheck stringWord = new StringCheck();
+            Assert.AreEqual("aword", stringWord.StringToArray("aword"));
         }
 
-        [TestMethod]
-        public void IsLeapYear_NumberNotDivisibleByFour_False()
-        {
-          RepeatCounter testLeapYear = new RepeatCounter();
-          Assert.AreEqual(false, testLeapYear.IsStringTest(1999));
-        }
-
-        [TestMethod]
-        public void IsLeapYear_MultiplesOfOneHundred_False()
-        {
-          RepeatCounter testLeapYear = new RepeatCounter();
-          Assert.AreEqual(false, testLeapYear.IsStringTest(1900));
-        }
-
-        [TestMethod]
-        public void IsLeapYear_MultiplesOfFourHundred_True()
-        {
-          RepeatCounter testLeapYear = new RepeatCounter();;
-          Assert.AreEqual(true, testLeapYear.IsStringTest(2000));
-        }
+        // [TestMethod]
+        // public void IsLeapYear_NumberNotDivisibleByFour_False()
+        // {
+        //   RepeatCounter testLeapYear = new RepeatCounter();
+        //   Assert.AreEqual(false, testLeapYear.IsStringTest(1999));
+        // }
+        //
+        // [TestMethod]
+        // public void IsLeapYear_MultiplesOfOneHundred_False()
+        // {
+        //   RepeatCounter testLeapYear = new RepeatCounter();
+        //   Assert.AreEqual(false, testLeapYear.IsStringTest(1900));
+        // }
+        //
+        // [TestMethod]
+        // public void IsLeapYear_MultiplesOfFourHundred_True()
+        // {
+        //   RepeatCounter testLeapYear = new RepeatCounter();;
+        //   Assert.AreEqual(true, testLeapYear.IsStringTest(2000));
+        // }
 
         // //This tells the compiler that the following code block is an individual
         // //test that should be run by MSTest

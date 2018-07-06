@@ -7,7 +7,7 @@ _This program checks how frequently a word appears in a given string._
 
 #### OBJECTIVE
 
-_OBJECTIVE: - _count instances of char that are in object.string
+_OBJECTIVE: _Count instances of char that are in object.string
 Your mission is to create a program that checks how frequently a word appears in a given string._
 
 #### Setup/Installation Requirements
@@ -51,8 +51,17 @@ _-another for actually searching the string of words._
 
 #### SPECS
 
-Split a string into individual words / "is the" / "is" "the"
+-put the given string into an array
+
+-create loop to go through the array
+
+-create an int counter
+
+-increment counter by one every time for every occurrence of the word
+
+-return final counter result to user
 
 // quick sentence here on why this test is being done
+
           Behavior		                 Input  Output
 Split and read each index of an array / 1,4,5 / 1
