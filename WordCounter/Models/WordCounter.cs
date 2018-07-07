@@ -57,9 +57,13 @@ namespace WordCounter.Models
         public int GetResults()
         {
             int count = 0;
-            for(int i=0; i < this._arrayFromParagraph.Length; i++)
+
+            string[] scanThisArray = this._paragraphToScan.Split(' ');
+            //string[] scanThisArray = StringToArray();
+
+            for(int i=0; i < scanThisArray.Length; i++)
             {
-                if(this._arrayFromParagraph[i] == this._wordToCount)
+                if(scanThisArray[i] == this._wordToCount)
                 {
                     count += 1;
                 }
@@ -81,24 +85,51 @@ namespace WordCounter.Models
     {
         public static void Main()
         {
+            int count;
+
+            //Arrange
             WordCounter stringCheckObject = new WordCounter("cat", "cat cat cat");
+            //Act
             stringCheckObject.StringToArray();
-            int count = stringCheckObject.GetResults();
+            count = stringCheckObject.GetResults();
+            //Assert
             Console.WriteLine(count); //output: 3
 
+            //Arrange
             WordCounter stringCheckObject2 = new WordCounter("cat", "cat dog cat");
+            //Act
             stringCheckObject2.StringToArray();
             count = stringCheckObject2.GetResults();
+            //Assert
             Console.WriteLine(count); //output: 2
 
+            //Arrange
             WordCounter stringCheckObject3 = new WordCounter();
             string wordy = "cow";
-            stringCheckObject3.SetWordToCount(wordy);
             string sentence = "The cow is big, the cow taste great";
+            //Act
+            stringCheckObject3.SetWordToCount(wordy);
             stringCheckObject3.SetParagraph(sentence);
             stringCheckObject3.StringToArray();
             count = stringCheckObject3.GetResults();
+            //Assert
             Console.WriteLine(count); //output: 2
+
+            //Arrange
+            WordCounter userWordCounter = new WordCounter();
+
+            Console.WriteLine("Enter a sentence or paragraph to scan.");
+            string userStringToScan = Console.ReadLine();
+            Console.WriteLine("Enter a word to count the occurrence of.");
+            string userWordIn = Console.ReadLine();
+            //Act
+            userWordCounter.SetParagraph(userStringToScan);
+            userWordCounter.SetWordToCount(userWordIn);
+            int numberOfOccurences = userWordCounter.GetResults();
+            //Assert
+            Console.WriteLine("There are " + numberOfOccurences + " occurences of " + userWordIn + ".");
+
+
         }
     }
 }
