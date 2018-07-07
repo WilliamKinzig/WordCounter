@@ -17,8 +17,8 @@ _Using... Miscrosoft Command Prompt_
 _navigate to WordCounter.Solution/WordCounter/Models_
 
 _then execute these lines:_
-    _-mcs StringCheck.cs_
-    _-mono StringCheck.exe_
+    _-mcs WordCounter.cs_
+    _-mono WordCounter.exe_
 
 ### Known Bugs
 
