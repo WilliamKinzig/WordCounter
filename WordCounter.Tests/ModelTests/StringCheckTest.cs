@@ -17,7 +17,6 @@ namespace WordCounter.Tests
             string toScan = newStringCheck.GetParaGraph();
 
             //Assert
-            //Assert.AreEqual(toCount, "the");
             Assert.AreEqual(toScan, "the yellow bus");
         }
 
@@ -29,12 +28,11 @@ namespace WordCounter.Tests
 
             //Act
             string paragraph = newStringCheck.GetParaGraph();
-            string[] result = newStringCheck.StringToArray(paragraph);
-            //string test = newStringCheck.GetWordToCount();
+            string[] result = newStringCheck.StringToArray();
             string[] blah = paragraph.Split(' ');
 
             //Assert
-            CollectionAssert.AreEqual(blah, result); //use (paragraph, result) to check array
+            CollectionAssert.AreEqual(blah, result);
         }
 
         [TestMethod]
@@ -44,10 +42,10 @@ namespace WordCounter.Tests
             StringCheck newStringCheck = new StringCheck("cat", "cat and cat");
             string paragraph = newStringCheck.GetParaGraph();
             string word = newStringCheck.GetWordToCount();
-            string[] test = newStringCheck.StringToArray(paragraph);
+            string[] test = newStringCheck.StringToArray();
 
             //Act
-            int result = newStringCheck.ArrayLoopCounter(word,test);
+            int result = newStringCheck.GetResults();
 
             //Assert
             Assert.AreEqual(result,2);

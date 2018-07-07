@@ -1,4 +1,7 @@
 using System;
+using System.Threading;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace WordCounter.Models
 {
@@ -9,7 +12,10 @@ namespace WordCounter.Models
         private string[] _arrayFromParagraph;
         private int _counter = 0;
 
-        public StringCheck (string searchFor, string searchIn)
+        /**
+         * Class constructor
+         */
+        public StringCheck(string searchFor, string searchIn)
         {
             _wordToCount = searchFor;
             _paragraphToScan = searchIn;
@@ -23,7 +29,6 @@ namespace WordCounter.Models
         {
             _wordToCount = newWord;
         }
-
         public void SetParagraph(string stringIn)
         {
             _paragraphToScan = stringIn;
@@ -33,19 +38,24 @@ namespace WordCounter.Models
             return _paragraphToScan;
         }
 
-        public string[] StringToArray(string sentence)
+        /**
+         * This method takes in a string sentence/paragraph and splits it into a string array.
+         */
+        public string[] StringToArray()
         {
-            string[] wordsArray = sentence.Split(' ');
-            this._arrayFromParagraph = sentence.Split(' ');
-            return wordsArray;
+            this._arrayFromParagraph = this._paragraphToScan.Split(' ');
+            return this._arrayFromParagraph;
         }
 
-        public int ArrayLoopCounter(string word, string[] arrayIn)
+        /**
+         * This method searches through a given string array and counts occurences of a specified string
+         */
+        public int GetResults()
         {
             int count = 0;
-            for(int i=0; i < arrayIn.Length; i++)
+            for(int i=0; i < this._arrayFromParagraph.Length; i++)
             {
-                if(arrayIn[i] == word)
+                if(this._arrayFromParagraph[i] == this._wordToCount)
                 {
                     count += 1;
                 }
@@ -55,15 +65,36 @@ namespace WordCounter.Models
                 }
             }
             this._counter = count;
-            return count;
+            return this._counter;
         }
     }
 
-    public class Program
-    {
-        public static void Main()
-        {
-
-        }
-    }
+    /**
+     * Main method
+     * Searches for the number of times a word appears in a sentence or paragraph
+     */
+    // public class Program
+    // {
+    //     public static void Main()
+    //     {
+    //         int count = 0;
+    //
+    //         StringCheck stringCheckObject = new StringCheck("cat", "cat cat cat");
+    //         stringCheckObject.StringToArray();
+    //         count = stringCheckObject.ArrayLoopCounter();
+    //         Console.WriteLine(count); //output: 3
+    //
+    //         StringCheck stringCheckObject2 = new StringCheck("cat", "cat dog cat");
+    //         stringCheckObject2.StringToArray();
+    //         count = stringCheckObject2.ArrayLoopCounter();
+    //         Console.WriteLine(count); //output: 2
+    //
+    //         StringCheck stringCheckObject3 = new StringCheck("cat", "cat dog cat");
+    //         stringCheckObject3.StringToArray();
+    //         stringCheckObject3.SetWordToCount("taste");
+    //         stringCheckObject3.SetParagraph("The cow is big, the cow taste great");
+    //         count = stringCheckObject3.ArrayLoopCounter();
+    //         Console.WriteLine(count); //output: 1
+    //     }
+    // }
 }
