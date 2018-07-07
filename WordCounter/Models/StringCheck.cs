@@ -10,7 +10,7 @@ namespace WordCounter.Models
         private string _wordToCount;
         private string _paragraphToScan;
         private string[] _arrayFromParagraph;
-        private int _counter = 0;
+        private int _counter;
 
         /**
          * Class constructor
@@ -77,28 +77,29 @@ namespace WordCounter.Models
      * Main method
      * Searches for the number of times a word appears in a sentence or paragraph
      */
-    // public class Program
-    // {
-    //     public static void Main()
-    //     {
-    //         int count = 0;
-    //
-    //         StringCheck stringCheckObject = new StringCheck("cat", "cat cat cat");
-    //         stringCheckObject.StringToArray();
-    //         count = stringCheckObject.ArrayLoopCounter();
-    //         Console.WriteLine(count); //output: 3
-    //
-    //         StringCheck stringCheckObject2 = new StringCheck("cat", "cat dog cat");
-    //         stringCheckObject2.StringToArray();
-    //         count = stringCheckObject2.ArrayLoopCounter();
-    //         Console.WriteLine(count); //output: 2
-    //
-    //         StringCheck stringCheckObject3 = new StringCheck("cat", "cat dog cat");
-    //         stringCheckObject3.StringToArray();
-    //         stringCheckObject3.SetWordToCount("taste");
-    //         stringCheckObject3.SetParagraph("The cow is big, the cow taste great");
-    //         count = stringCheckObject3.ArrayLoopCounter();
-    //         Console.WriteLine(count); //output: 1
-    //     }
-    // }
+    public class Program
+    {
+        public static void Main()
+        {
+            StringCheck stringCheckObject = new StringCheck("cat", "cat cat cat");
+            stringCheckObject.StringToArray();
+            int count = stringCheckObject.GetResults();
+            Console.WriteLine(count); //output: 3
+
+            StringCheck stringCheckObject2 = new StringCheck("cat", "cat dog cat");
+            stringCheckObject2.StringToArray();
+            count = stringCheckObject2.GetResults();
+            Console.WriteLine(count); //output: 2
+
+            StringCheck stringCheckObject3 = new StringCheck();
+            //
+            string wordy = "cow";
+            stringCheckObject3.SetWordToCount(wordy);
+            string sentence = "The cow is big, the cow taste great";
+            stringCheckObject3.SetParagraph(sentence);
+            stringCheckObject3.StringToArray();
+            count = stringCheckObject3.GetResults();
+            Console.WriteLine(count); //output: 2
+        }
+    }
 }
