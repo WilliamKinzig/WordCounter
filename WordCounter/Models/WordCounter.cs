@@ -13,12 +13,13 @@ namespace WordCounter.Models
         private int _counter;
 
         /**
-         * Class constructor
+         * Class constructors
          */
         public WordCounter()
         {
 
         }
+
         public WordCounter(string searchFor, string searchIn)
         {
             _wordToCount = searchFor;
@@ -85,39 +86,39 @@ namespace WordCounter.Models
     {
         public static void Main()
         {
-            int count;
+            /*** TESTING TESTING 123 ***/
+            //int count;
 
-            //Arrange
-            WordCounter stringCheckObject = new WordCounter("cat", "cat cat cat");
-            //Act
-            stringCheckObject.StringToArray();
-            count = stringCheckObject.GetResults();
-            //Assert
-            Console.WriteLine(count); //output: 3
-
-            //Arrange
-            WordCounter stringCheckObject2 = new WordCounter("cat", "cat dog cat");
-            //Act
-            stringCheckObject2.StringToArray();
-            count = stringCheckObject2.GetResults();
-            //Assert
-            Console.WriteLine(count); //output: 2
-
-            //Arrange
-            WordCounter stringCheckObject3 = new WordCounter();
-            string wordy = "cow";
-            string sentence = "The cow is big, the cow taste great";
-            //Act
-            stringCheckObject3.SetWordToCount(wordy);
-            stringCheckObject3.SetParagraph(sentence);
-            stringCheckObject3.StringToArray();
-            count = stringCheckObject3.GetResults();
-            //Assert
-            Console.WriteLine(count); //output: 2
+            // //Arrange
+            // WordCounter stringCheckObject = new WordCounter("cat", "cat cat cat");
+            // //Act
+            // stringCheckObject.StringToArray();
+            // count = stringCheckObject.GetResults();
+            // //Assert
+            // Console.WriteLine(count); //output: 3
+            //
+            // //Arrange
+            // WordCounter stringCheckObject2 = new WordCounter("cat", "cat dog cat");
+            // //Act
+            // stringCheckObject2.StringToArray();
+            // count = stringCheckObject2.GetResults();
+            // //Assert
+            // Console.WriteLine(count); //output: 2
+            //
+            // //Arrange
+            // WordCounter stringCheckObject3 = new WordCounter();
+            // string wordy = "cow";
+            // string sentence = "The cow is big, the cow taste great";
+            // //Act
+            // stringCheckObject3.SetWordToCount(wordy);
+            // stringCheckObject3.SetParagraph(sentence);
+            // stringCheckObject3.StringToArray();
+            // count = stringCheckObject3.GetResults();
+            // //Assert
+            // Console.WriteLine(count); //output: 2
 
             //Arrange
             WordCounter userWordCounter = new WordCounter();
-
             Console.WriteLine("Enter a sentence or paragraph to scan.");
             string userStringToScan = Console.ReadLine();
             Console.WriteLine("Enter a word to count the occurrence of.");
