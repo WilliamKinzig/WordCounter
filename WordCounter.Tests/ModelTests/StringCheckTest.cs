@@ -36,8 +36,27 @@ namespace WordCounter.Tests
         }
 
         [TestMethod]
+        public void RunNoArgConstructor_ReturnTheWordCount_Int()
+        {
+            //Arrange
+            StringCheck newStringCheck = new StringCheck();
+
+            //Act
+            newStringCheck.SetWordToCount("blue,");
+            newStringCheck.SetParagraph("the sky is blue, the oceans is blue, the dog is not blue");
+            string paragraph = newStringCheck.GetParaGraph();
+            string word = newStringCheck.GetWordToCount();
+            string[] test = newStringCheck.StringToArray();
+            int result = newStringCheck.GetResults();
+
+            //Assert
+            Assert.AreEqual(result,2);
+        }
+
+        [TestMethod]
         public void GetTheWordCount_ReturnTheWordCount_Int()
         {
+
             //Arrange
             StringCheck newStringCheck = new StringCheck("cat", "cat and cat");
             string paragraph = newStringCheck.GetParaGraph();

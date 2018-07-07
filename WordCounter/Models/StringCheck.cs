@@ -15,6 +15,10 @@ namespace WordCounter.Models
         /**
          * Class constructor
          */
+        public StringCheck()
+        {
+
+        }
         public StringCheck(string searchFor, string searchIn)
         {
             _wordToCount = searchFor;
