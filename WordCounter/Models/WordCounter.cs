@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace WordCounter.Models
 {
-    public class StringCheck
+    public class WordCounter
     {
         private string _wordToCount;
         private string _paragraphToScan;
@@ -15,11 +15,11 @@ namespace WordCounter.Models
         /**
          * Class constructor
          */
-        public StringCheck()
+        public WordCounter()
         {
 
         }
-        public StringCheck(string searchFor, string searchIn)
+        public WordCounter(string searchFor, string searchIn)
         {
             _wordToCount = searchFor;
             _paragraphToScan = searchIn;
@@ -81,17 +81,17 @@ namespace WordCounter.Models
     {
         public static void Main()
         {
-            StringCheck stringCheckObject = new StringCheck("cat", "cat cat cat");
+            WordCounter stringCheckObject = new WordCounter("cat", "cat cat cat");
             stringCheckObject.StringToArray();
             int count = stringCheckObject.GetResults();
             Console.WriteLine(count); //output: 3
 
-            StringCheck stringCheckObject2 = new StringCheck("cat", "cat dog cat");
+            WordCounter stringCheckObject2 = new WordCounter("cat", "cat dog cat");
             stringCheckObject2.StringToArray();
             count = stringCheckObject2.GetResults();
             Console.WriteLine(count); //output: 2
 
-            StringCheck stringCheckObject3 = new StringCheck();
+            WordCounter stringCheckObject3 = new WordCounter();
             string wordy = "cow";
             stringCheckObject3.SetWordToCount(wordy);
             string sentence = "The cow is big, the cow taste great";

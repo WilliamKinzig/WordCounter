@@ -38,13 +38,13 @@ _*No license required*_
 
 _Copyright (c) 2018 **_William Kinzig**_
 
-### NAMING CONVENTIONS
+### Naming Conventions
 
 _Solution Name: WordCounter.Solution_
 _Project Name: WordCounter_
 _Test Project Name: WordCounter.Tests_
 
-### ASSIGNMENT INSTRUCTIONS
+### Assignment Instructions
 
 _Create a class called RepeatCounter. This class should contain logic for counting how many times a word appears in a string of words_
 
