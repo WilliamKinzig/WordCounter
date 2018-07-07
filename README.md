@@ -12,7 +12,13 @@ Your mission is to create a program that checks how frequently a word appears in
 
 #### Setup/Installation Requirements
 
-_None_
+Using... Miscrosoft Command Prompt
+
+_navigate to WordCounter.Solution/WordCounter/Models_
+
+_then execute these lines:_
+    _-mcs StringCheck.cs_
+    _-mono StringCheck.exe_
 
 #### Known Bugs
 
