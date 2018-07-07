@@ -12,7 +12,7 @@ Your mission is to create a program that checks how frequently a word appears in
 
 #### Setup/Installation Requirements
 
-Using... Miscrosoft Command Prompt
+_Using... Miscrosoft Command Prompt_
 
 _navigate to WordCounter.Solution/WordCounter/Models_
 
