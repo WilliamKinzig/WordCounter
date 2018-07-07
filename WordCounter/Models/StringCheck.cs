@@ -92,7 +92,6 @@ namespace WordCounter.Models
             Console.WriteLine(count); //output: 2
 
             StringCheck stringCheckObject3 = new StringCheck();
-            //
             string wordy = "cow";
             stringCheckObject3.SetWordToCount(wordy);
             string sentence = "The cow is big, the cow taste great";
