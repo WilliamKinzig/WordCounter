@@ -14,6 +14,7 @@ Your mission is to create a program that checks how frequently a word appears in
 
 _Using... Miscrosoft Command Prompt_
 
+_COMMAND PROMPT_
 _navigate to WordCounter.Solution/WordCounter/Models_
 
 _then execute these lines:_
