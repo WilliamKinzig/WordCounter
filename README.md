@@ -5,12 +5,12 @@ _June 29th, 2018_
 
 _This program checks how frequently a word appears in a given string._
 
-#### OBJECTIVE
+### OBJECTIVE
 
 _OBJECTIVE: Count instances of char that are in object.string
 Your mission is to create a program that checks how frequently a word appears in a given string._
 
-#### Setup/Installation Requirements
+### Setup/Installation Requirements
 
 _Using... Miscrosoft Command Prompt_
 
@@ -20,31 +20,31 @@ _then execute these lines:_
     _-mcs StringCheck.cs_
     _-mono StringCheck.exe_
 
-#### Known Bugs
+### Known Bugs
 
 _No known bugs._
 
-#### Support and contact details
+### Support and contact details
 
 _William Kinzig email: billykinzig@gmail.com_
 
-#### Technologies Used
+### Technologies Used
 
 _Created with Atom editor.  Use any browser to view._
 
-#### License
+### License
 
 _*No license required*_
 
 _Copyright (c) 2018 **_William Kinzig**_
 
-#### NAMING CONVENTIONS
+### NAMING CONVENTIONS
 
 _Solution Name: WordCounter.Solution_
 _Project Name: WordCounter_
 _Test Project Name: WordCounter.Tests_
 
-#### ASSIGNMENT INSTRUCTIONS
+### ASSIGNMENT INSTRUCTIONS
 
 _Create a class called RepeatCounter. This class should contain logic for counting how many times a word appears in a string of words_
 
@@ -55,7 +55,7 @@ _For test use multiple methods:_
 _-one method to test whether the user's input is valid_
 _-another for actually searching the string of words._
 
-#### SPECS
+### SPECS
 
 -get word to count
 Behavior		                 Input  Output
